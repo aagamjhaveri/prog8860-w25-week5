@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:alpine
 
 WORKDIR /app
 
@@ -15,4 +15,4 @@ COPY . /app
 # EXPOSE the port
 EXPOSE 3000
 
-ENTRYPOINT [ "npm start" ]
+ENTRYPOINT [ "npm","start" ]
